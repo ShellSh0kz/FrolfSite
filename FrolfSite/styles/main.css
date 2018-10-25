@@ -1,0 +1,211 @@
+/*general styles*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background-color: rgba(229,216,183,.45);
+}
+
+
+body{
+	margin: 0 auto;
+	width: 800px;
+
+	border: 2px solid black;
+}
+/*header stuff*/
+header{
+	padding: 5px 0;
+
+
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+
+	background-color: #569ef7;
+	
+}
+
+
+
+header img {
+	float: left;
+}
+
+header h1{
+	flex-grow: .5;
+
+
+
+	
+	color: #e5d8b7;
+	text-shadow: 2px 2px 3px #473728;
+	/*box-shadow: 1px 1px 2px 2px #473728;
+	background-color:  #826258;*/
+}
+
+nav{
+	clear: both;
+}
+
+nav ul li{
+	width: 160px;
+
+
+
+	float: left;
+
+
+	list-style: none;
+	background-color: #826258;
+
+
+
+}
+nav ul li a{
+	padding: 5px 0;
+
+	display: block;
+	text-align: center;
+
+
+	text-decoration: none;
+	color: #e5d8b7;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+nav ul ul{
+	display: none;
+	position: absolute;
+}
+
+nav ul ul li{
+	clear: both
+}
+nav ul li:hover ul{
+	display: block;
+}
+
+
+
+nav ul li a:hover, nav ul li a:focus{
+	background-color: #473728;
+
+}
+
+
+
+nav::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+
+/*end header stuff*/
+/*main stuff*/
+main{
+
+
+	clear: both;
+
+
+
+
+
+	background-color: white;
+}
+
+/*section stuff*/
+
+main section{
+	width: 536px;
+	padding: 4px;
+
+	float: left;
+}
+
+
+
+
+
+
+
+
+/*end section stuff*/
+
+/*sidebarstuff*/
+
+
+main aside{
+
+	width: 240px;
+	height: 100%;
+	padding: 4px;
+	border: 2px solid #826258;
+	margin-right: 4px;
+	margin-top: 4px;
+
+
+	float:left;
+
+
+
+	background-color: rgba(86, 158, 247);
+}
+
+
+
+main aside #sideNav ul{
+	list-style: none;
+}
+
+main aside #sideNav ul li a {
+	text-decoration: none;
+	color: #826258;
+	font-weight: bold;
+}
+
+
+main aside #sideNav ul li a:hover, main aside #sideNav ul li a:focus{
+	color: #e5d8b7;
+}
+
+
+
+/*end sidebar stuff*/
+
+
+main::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+/*end main stuff*/
+
+
+
+
+
+/*footer stuff*/
+
+
+footer{
+	padding: 5px 0;
+	border-top: 3px solid #826258;
+
+	text-align: center;
+	background-color: #569ef7;
+	font-size: .75em;
+	color: #826258;
+	font-weight: bold;
+}
+
+/*end footer stuff*/
